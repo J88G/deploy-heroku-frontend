@@ -31,9 +31,9 @@ class Auth extends Component {
         const { handleSubmit } = this.props
         return (
             <div className="login-box">
-                <div className="login-logo"><b> My</b> Money</div>
+                <div className="login-logo"><b> Globe</b>Stamp</div>
                 <div className="login-box-body">
-                    <p className="login-box-msg">Bem vindo!</p>
+                    <p className="login-box-msg">Back-office!</p>
                     <form onSubmit={handleSubmit(v => this.onSubmit(v))}>
                         <Field component={Input} type="input" name="name"
                             placeholder="Nome" icon='user' hide={loginMode} />
@@ -53,10 +53,10 @@ class Auth extends Component {
                         </Row>
                     </form>
                     <br />
-                    <a onClick={() => this.changeMode()}>
+                   {/*<a onClick={() => this.changeMode()}>
                         {loginMode ? 'Novo usuário? Registrar aqui!' :
                             'Já é cadastrado? Entrar aqui!'}
-                    </a>
+                    </a>*/}
                 </div>
                 <Messages />
             </div>
